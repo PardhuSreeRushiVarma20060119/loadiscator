@@ -2,27 +2,27 @@ import typer
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
-from loadifscator.payloads.generator import generate_payload
-from loadifscator.obfuscators.base64 import base64_obfuscate
-from loadifscator.obfuscators.xor import xor_obfuscate
+from loadiscator.payloads.generator import generate_payload
+from loadiscator.obfuscators.base64 import base64_obfuscate
+from loadiscator.obfuscators.xor import xor_obfuscate
 try:
-    from loadifscator.obfuscators.stringmangle import string_mangle
+    from loadiscator.obfuscators.stringmangle import string_mangle
 except ImportError:
     string_mangle = None
-from loadifscator.obfuscators.polymorphic import polymorphic_obfuscate
+from loadiscator.obfuscators.polymorphic import polymorphic_obfuscate
 try:
     from loadifscator.obfuscators.metamorphic import MetamorphicEngine  # type: ignore
 except ImportError:
     MetamorphicEngine = None
-from loadifscator.encryptors.aes import aes_encrypt
-from loadifscator.encoder.oneliner import generate_oneliner
-from loadifscator.utils.banner import show_banner
-from loadifscator.ai.payload_optimizer import AIPayloadOptimizer
-from loadifscator.evasion.process_hollowing import ProcessHollowing
-from loadifscator.evasion.memory_only import MemoryOnlyExecution
-from loadifscator.evasion.living_off_land import LivingOffTheLand
-from loadifscator.c2.mirage_connector import MirageC2Connector
-from loadifscator.c2.dns_tunnel import DNSTunnelC2
+from loadiscator.encryptors.aes import aes_encrypt
+from loadiscator.encoder.oneliner import generate_oneliner
+from loadiscator.utils.banner import show_banner
+from loadiscator.ai.payload_optimizer import AIPayloadOptimizer
+from loadiscator.evasion.process_hollowing import ProcessHollowing
+from loadiscator.evasion.memory_only import MemoryOnlyExecution
+from loadiscator.evasion.living_off_land import LivingOffTheLand
+from loadiscator.c2.mirage_connector import MirageC2Connector
+from loadiscator.c2.dns_tunnel import DNSTunnelC2
 
 console = Console()
 app = typer.Typer()
