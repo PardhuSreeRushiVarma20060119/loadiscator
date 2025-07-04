@@ -1,0 +1,7 @@
+typer
+jinja2
+cryptography
+pycryptodome
+rich
+openai
+requests 

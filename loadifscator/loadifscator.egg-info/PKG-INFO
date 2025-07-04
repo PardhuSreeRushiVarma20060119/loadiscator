@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: loadifscator
+Version: 0.1
+Summary: Red Team Payload Generator & Obfuscation Framework
+Author: Your Name
+License: MIT
+Requires-Dist: typer
+Requires-Dist: jinja2
+Requires-Dist: cryptography
+Requires-Dist: pycryptodome
+Dynamic: author
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary

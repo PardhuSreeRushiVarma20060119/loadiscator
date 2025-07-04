@@ -1,0 +1,4 @@
+typer
+jinja2
+cryptography
+pycryptodome
