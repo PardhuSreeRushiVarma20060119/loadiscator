@@ -1,3 +1,5 @@
+<img src="https://github.com/user-attachments/assets/8e083d5a-6232-49d6-88ce-a24e231a5429" alt="Loadiscator" width="1000" />
+
 # Loadiscator : Payload Generation & Obfuscation Framework for Red Teams
 
 > ⚠️ For authorized red team operations, AV/EDR evasion research, and educational use only. Do NOT use for unauthorized access or malicious purposes.
