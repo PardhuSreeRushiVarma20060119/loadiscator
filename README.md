@@ -1,8 +1,6 @@
 # Loadiscator : Payload Generation & Obfuscation Framework for Red Teams
 
-**Modular Red Team Payload Generator & Obfuscation Framework**
-
-> ⚠️ For authorized red team operations, AV/EDR evasion research, and educational use only. Do not use for unauthorized access or malicious purposes.
+> ⚠️ For authorized red team operations, AV/EDR evasion research, and educational use only. Do NOT use for unauthorized access or malicious purposes.
 
 ---
 
