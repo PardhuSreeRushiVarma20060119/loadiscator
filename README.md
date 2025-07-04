@@ -292,22 +292,27 @@ python -m loadiscator.cli c2-mirage --server http://mirage.local --listener myli
 ## FAQ
 
 **Q: Is this tool legal to use?**
-A: Only for authorized red team, research, and educational use. Never use for unauthorized access.
+> A: Yes — but only for authorized red teaming, security research, or educational purposes. You must have explicit permission before running any generated payloads on a target system. Unauthorized use is illegal and strictly against this project's intent.
 
-**Q: Can I add my own payloads or obfuscators?**
-A: Yes! The framework is modular. Add new modules under `loadiscator/payloads/` or `loadiscator/obfuscators/`.
+Q: Can I add my own payloads or obfuscators?**
+> A: Totally! Loadiscator is modular by design. Just add your logic to loadiscator/payloads/ or loadiscator/obfuscators/.
+It’s completely your choice — not a requirement — but we truly appreciate contributions from the community. ❤️
 
-**Q: Does it support Linux/Mac payloads?**
-A: Bash and Python payloads are cross-platform. Windows-specific features (e.g., memory-only, process hollowing) are for Windows.
+**Q: Does it support Linux and macOS targets?**
+> A: Yes, many payloads (like Python, Bash) are cross-platform. However, some advanced modules (like memory-only shellcode loaders or process hollowing) are currently Windows-only due to system-specific APIs.
 
 **Q: How do I use the AI optimizer?**
-A: Set your OpenAI API key, then use the `ai-optimize` command.
+> A: Just set your OpenAI API key as the environment variable OPENAI_API_KEY, then run the ai-optimize command. The tool will use GPT to intelligently mutate your payload for better evasion.
+It's an experimental but powerful feature — feedback is always welcome!
 
-**Q: Can I use real shellcode?**
-A: Yes. Use msfvenom, Donut, or the included generator for test shellcode.
+**Q: Can I use real-world shellcode?**
+> A: Yes! While Loadiscator includes a simple generate_shellcode.py for testing, you can also use tools like msfvenom, Donut, or your own C2-generated shellcode. Just pass the .bin file into the memory-only loader.
 
-**Q: Is there a web GUI?**
-A: A basic web GUI is included in `loadiscator/webgui/app.py` (experimental).
+**Q: Is this beginner-friendly?**
+> A: Definitely. The CLI is designed to be intuitive, and the README gives you step-by-step examples. You don’t need to be a red team expert to start learning and using Loadiscator effectively.
+
+**Q: I found a bug / have an idea — what should I do?**
+> A: That’s awesome! You can open an issue or submit a pull request. No pressure — but if you do contribute, we’ll make sure to give you credit and ❤️ in the changelog.
 
 ---
 
@@ -350,7 +355,6 @@ Payload&Obsfucation Framework/
     - obfuscators/         # All obfuscation engines
     - payloads/            # Payload templates (bash, c, python, powershell)
     - utils/               # Utilities (banner, random name, anti-analysis)
-    - webgui/              # Optional web GUI
     - cli.py               # Main CLI entrypoint
     - README.md            # This documentation
     - requirements.txt     # Python dependencies
@@ -418,7 +422,7 @@ If you find my work valuable, consider supporting it with love:
 
 ---
 
-> END OF DOCUMENTATION
+> END OF DOCUMENTATION, *Built With Love💖*S
 
 <!--
 This README is intentionally verbose and detailed for research, red team, and educational use. For a shorter version, see the top section or use `less README.md`.
