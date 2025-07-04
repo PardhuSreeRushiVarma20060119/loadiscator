@@ -5,8 +5,6 @@
   <i>🔐 Advanced AV/EDR Evasion • Adversary Simulation Toolkit</i>
 </p>
 
-# Loadiscator : Payload Generation & Obfuscation Framework for Red Teams
-
 > ⚠️ For authorized red team operations, AV/EDR evasion research, and educational use only. Do NOT use for unauthorized access or malicious purposes.
 
 ---
