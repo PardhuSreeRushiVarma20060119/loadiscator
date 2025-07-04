@@ -1,4 +1,4 @@
-# Loadiscator
+# Loadiscator : Payload Generation & Obfuscation Framework for Red Teams
 
 **Modular Red Team Payload Generator & Obfuscation Framework**
 
