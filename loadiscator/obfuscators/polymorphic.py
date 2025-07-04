@@ -1,7 +1,7 @@
 import random
 import string
 import re
-from loadifscator.utils.random_name import random_name
+from loadiscator.utils.random_name import random_name
 
 def polymorphic_obfuscate(input_file, output_file):
     """Apply polymorphic obfuscation with junk code and variable renaming."""

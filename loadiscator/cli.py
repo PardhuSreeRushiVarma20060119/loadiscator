@@ -11,7 +11,7 @@ except ImportError:
     string_mangle = None
 from loadiscator.obfuscators.polymorphic import polymorphic_obfuscate
 try:
-    from loadifscator.obfuscators.metamorphic import MetamorphicEngine  # type: ignore
+    from loadiscator.obfuscators.metamorphic import MetamorphicEngine  # type: ignore
 except ImportError:
     MetamorphicEngine = None
 from loadiscator.encryptors.aes import aes_encrypt
