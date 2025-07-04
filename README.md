@@ -43,7 +43,7 @@
 - **Living-Off-The-Land (LOTL):** Use native system tools for stealth
 - **C2 Integrations:** MirageC2, DNS tunneling, HTTP blending
 - **AI-Powered Optimization:** GPT-4 based payload mutation for AV/EDR bypass
-- **Rich CLI & Optional Web GUI**
+- **Rich CLI**
 - **Banner and UX Enhancements:** Rich ASCII art, colored output
 - **Extensible:** Easily add new payloads, obfuscators, or C2 modules
 
@@ -53,7 +53,7 @@
 
 ```
 +-------------------+
-|   CLI / Web GUI   |
+|        CLI        |
 +-------------------+
           |
 +-------------------+
@@ -74,7 +74,7 @@
 +-------------------+
 ```
 
-- **CLI/Web GUI:** User interface for all operations
+- **CLI:** Fast User interface for all operations under cli.
 - **Core Modules:** Modular Python packages for each function
 - **Output:** Final payloads, scripts, and binaries
 
