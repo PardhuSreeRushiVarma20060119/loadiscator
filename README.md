@@ -301,7 +301,8 @@ python -m loadiscator.cli c2-mirage --server http://mirage.local --listener myli
 
 Q: Can I add my own payloads or obfuscators?**
 > A: Totally! Loadiscator is modular by design. Just add your logic to loadiscator/payloads/ or loadiscator/obfuscators/.
-It’s completely your choice — not a requirement — but we truly appreciate contributions from the community. ❤️
+It’s completely your choice — not a requirement.
+— but we truly appreciate contributions from the community. ❤️
 
 **Q: Does it support Linux and macOS targets?**
 > A: Yes, many payloads (like Python, Bash) are cross-platform. However, some advanced modules (like memory-only shellcode loaders or process hollowing) are currently Windows-only due to system-specific APIs.
