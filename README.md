@@ -430,7 +430,7 @@ If you find my work valuable, consider supporting it with love:
 
 ---
 
-> END OF DOCUMENTATION, *Built With Love💖*S
+> END OF DOCUMENTATION, *Built With Love💖*
 
 <!--
 This README is intentionally verbose and detailed for research, red team, and educational use. For a shorter version, see the top section or use `less README.md`.
