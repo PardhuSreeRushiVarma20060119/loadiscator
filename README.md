@@ -102,7 +102,7 @@ pip install -r requirements.txt
 
 ### 3. (Optional) Install Additional Tools
 - For shellcode generation: Python 3.x
-- For C2 integration: MirageC2, DNS server, etc.
+- For C2 integration: Preferred C2s, DNS server, etc.
 
 ---
 
