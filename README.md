@@ -34,6 +34,8 @@
 
 **Loadiscator** is a modular, extensible framework for generating, obfuscating, and delivering payloads for red team operations, adversary simulation, and AV/EDR evasion research. It supports multiple languages, advanced obfuscation, encryption, fileless execution, and C2 integrations. The framework is designed for both CLI and (optionally) web GUI usage, with a focus on research, education, and authorized security testing.
 
+> Note : This Is A Heavy Prototype Build, Some Functions May Or May Not Work, Little Tweaks and Modifications Are Usually Needed, Self-Tuning Is Key.
+
 ---
 
 ## Features
